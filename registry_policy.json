@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "ReplicationAccessCrossAccount",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::007353244176:user/kenechi"
+        },
+        "Action": [
+          "ecr:CreateRepository",
+          "ecr:ReplicateImage"
+        ],
+        "Resource": "arn:aws:ecr:us-east-2:007353244176:repository/*"
+      }
+    ]
+  }
